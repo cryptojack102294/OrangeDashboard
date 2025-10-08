@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">📊 DashBoard</div>
+            <ul class="nav-menu">
+                <li class="nav-item active">
+                    <span class="nav-icon">🏠</span>
+                    <span>Dashboard</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-icon">📈</span>
+                    <span>Analytics</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-icon">📁</span>
+                    <span>Projects</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    <span>Team</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-icon">💬</span>
+                    <span>Messages</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-icon">⚙️</span>
+                    <span>Settings</span>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <h1>Welcome back, Alex!</h1>
+                <div class="user-profile">
+                    <div class="avatar">AK</div>
+                </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">💰</div>
+                    </div>
+                    <div class="stat-value">$45,231</div>
+                    <div class="stat-label">Total Revenue</div>
+                    <span class="stat-change positive">↑ 12.5%</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">👤</div>
+                    </div>
+                    <div class="stat-value">2,345</div>
+                    <div class="stat-label">Active Users</div>
+                    <span class="stat-change positive">↑ 8.2%</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">📦</div>
+                    </div>
+                    <div class="stat-value">1,423</div>
+                    <div class="stat-label">Total Orders</div>
+                    <span class="stat-change negative">↓ 3.1%</span>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">⭐</div>
+                    </div>
+                    <div class="stat-value">98.5%</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                    <span class="stat-change positive">↑ 2.3%</span>
+                </div>
+            </div>
+
+            <!-- Charts -->
+            <div class="charts-container">
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h2 class="chart-title">Revenue Overview</h2>
+                        <select class="chart-filter">
+                            <option>Last 7 days</option>
+                            <option>Last 30 days</option>
+                            <option>Last 90 days</option>
+                        </select>
+                    </div>
+                    <div class="chart-placeholder">
+                        <div class="chart-bars">
+                            <div class="bar" style="height: 60%;"></div>
+                            <div class="bar" style="height: 80%;"></div>
+                            <div class="bar" style="height: 45%;"></div>
+                            <div class="bar" style="height: 90%;"></div>
+                            <div class="bar" style="height: 70%;"></div>
+                            <div class="bar" style="height: 85%;"></div>
+                            <div class="bar" style="height: 95%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <h2 class="chart-title">Recent Activity</h2>
+                    </div>
+                    <ul class="activity-list">
+                        <li class="activity-item">
+                            <div class="activity-dot"></div>
+                            <div class="activity-content">
+                                <div class="activity-title">New order received</div>
+                                <div class="activity-time">5 minutes ago</div>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-dot"></div>
+                            <div class="activity-content">
+                                <div class="activity-title">User signup completed</div>
+                                <div class="activity-time">1 hour ago</div>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-dot"></div>
+                            <div class="activity-content">
+                                <div class="activity-title">Payment processed</div>
+                                <div class="activity-time">3 hours ago</div>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-dot"></div>
+                            <div class="activity-content">
+                                <div class="activity-title">Report generated</div>
+                                <div class="activity-time">5 hours ago</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table-card">
+                <h2 class="chart-title" style="margin-bottom: 1.5rem;">Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#ORD-001</td>
+                            <td>John Smith</td>
+                            <td>$299.00</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                            <td>Oct 8, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-002</td>
+                            <td>Emma Wilson</td>
+                            <td>$450.00</td>
+                            <td><span class="status-badge pending">Pending</span></td>
+                            <td>Oct 8, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-003</td>
+                            <td>Michael Brown</td>
+                            <td>$180.00</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                            <td>Oct 7, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-004</td>
+                            <td>Sarah Davis</td>
+                            <td>$320.00</td>
+                            <td><span class="status-badge cancelled">Cancelled</span></td>
+                            <td>Oct 7, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>#ORD-005</td>
+                            <td>James Johnson</td>
+                            <td>$590.00</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                            <td>Oct 6, 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
